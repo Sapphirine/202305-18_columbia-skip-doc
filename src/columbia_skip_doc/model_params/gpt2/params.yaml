@@ -1,0 +1,26 @@
+batch_size: 3
+dataset: medquad
+epochs: 5
+eps: 1.0e-08
+freeze_plm: false
+generation_metrics:
+  do_sample: false
+  max_length: 884
+  max_new_tokens: null
+  min_length: 5
+  num_beams: 3
+  repetition_penalty: 5.0
+  temperature: 1.0
+  top_k: 0
+  top_p: 0.9
+learning_rate: 5.0e-05
+max_sequence_length: 640
+model_score: 0.014564300912027152
+prompt_type: prefix_tuning
+template: "\n          Question: {'placeholder':'text_a', 'shortenable': 'True'} You\
+  \ are a doctor in a clinic. Answer the question and provide a plan of action if\
+  \ needed. {'mask'}\n    "
+test_split: 0.2
+train_split: 0.7
+truncate_method: tail
+validation_split: 0.1
